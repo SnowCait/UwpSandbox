@@ -8,6 +8,140 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
+        <ListView>
+            <TextBlock Text="ListViewItem1"/>
+            <TextBlock Text="ListViewItem2"/>
+            <TextBlock Text="ListViewItem3"/>
+            <TextBlock Text="ListViewItem4"/>
+            <TextBlock Text="ListViewItem5"/>
+            <TextBlock Text="ListViewItem6"/>
+            <TextBlock Text="ListViewItem7"/>
+            <TextBlock Text="ListViewItem8"/>
+            <TextBlock Text="ListViewItem9"/>
+            <TextBlock Text="ListViewItem10"/>
+            <TextBlock Text="ListViewItem11"/>
+            <TextBlock Text="ListViewItem12"/>
+            <TextBlock Text="ListViewItem13"/>
+            <TextBlock Text="ListViewItem14"/>
+            <TextBlock Text="ListViewItem15"/>
+            <TextBlock Text="ListViewItem16"/>
+            <TextBlock Text="ListViewItem17"/>
+            <TextBlock Text="ListViewItem18"/>
+            <TextBlock Text="ListViewItem19"/>
+            <TextBlock Text="ListViewItem20"/>
+            <ListView.FooterTemplate>
+                <DataTemplate>
+                    <TextBlock Text="Footer"/>
+                </DataTemplate>
+            </ListView.FooterTemplate>
+        </ListView>
+
+        <ListView x:Name="ListView1" Grid.Column="1"
+                  ChoosingGroupHeaderContainer="ListView1_ChoosingGroupHeaderContainer"
+                  ChoosingItemContainer="ListView1_ChoosingItemContainer"
+                  ContainerContentChanging="ListView1_ContainerContentChanging"
+                  DataContextChanged="ListView1_DataContextChanged"
+                  DoubleTapped="ListView1_DoubleTapped"
+                  DragEnter="ListView1_DragEnter"
+                  DragItemsCompleted="ListView1_DragItemsCompleted"
+                  DragItemsStarting="ListView1_DragItemsStarting"
+                  DragLeave="ListView1_DragLeave"
+                  DragOver="ListView1_DragOver"
+                  DragStarting="ListView1_DragStarting"
+                  Drop="ListView1_Drop"
+                  DropCompleted="ListView1_DropCompleted"
+                  GotFocus="ListView1_GotFocus"
+                  Holding="ListView1_Holding"
+                  IsEnabledChanged="ListView1_IsEnabledChanged"
+                  ItemClick="ListView1_ItemClick"
+                  KeyDown="ListView1_KeyDown"
+                  KeyUp="ListView1_KeyUp"
+                  LayoutUpdated="ListView1_LayoutUpdated"
+                  Loaded="ListView1_Loaded"
+                  Loading="ListView1_Loading"
+                  LostFocus="ListView1_LostFocus"
+                  ManipulationCompleted="ListView1_ManipulationCompleted"
+                  ManipulationDelta="ListView1_ManipulationDelta"
+                  ManipulationInertiaStarting="ListView1_ManipulationInertiaStarting"
+                  ManipulationStarted="ListView1_ManipulationStarted"
+                  ManipulationStarting="ListView1_ManipulationStarting"
+                  PointerCanceled="ListView1_PointerCanceled"
+                  PointerCaptureLost="ListView1_PointerCaptureLost"
+                  PointerEntered="ListView1_PointerEntered"
+                  PointerExited="ListView1_PointerExited"
+                  PointerMoved="ListView1_PointerMoved"
+                  PointerPressed="ListView1_PointerPressed"
+                  PointerReleased="ListView1_PointerReleased"
+                  PointerWheelChanged="ListView1_PointerWheelChanged"
+                  RightTapped="ListView1_RightTapped"
+                  SelectionChanged="ListView1_SelectionChanged"
+                  SizeChanged="ListView1_SizeChanged"
+                  Tapped="ListView1_Tapped"
+                  Unloaded="ListView1_Unloaded">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <ListViewItemPresenter
+                                    ContentTransitions="{TemplateBinding ContentTransitions}"
+                                    SelectionCheckMarkVisualEnabled="True"
+                                    CheckBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                    CheckBoxBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                    DragBackground="{ThemeResource ListViewItemDragBackgroundThemeBrush}"
+                                    DragForeground="{ThemeResource ListViewItemDragForegroundThemeBrush}"
+                                    FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}"
+                                    FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}"
+                                    PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
+                                    PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+                                    PointerOverForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}"
+                                    SelectedBackground="{ThemeResource SystemControlHighlightListAccentLowBrush}"
+                                    SelectedForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}"
+                                    SelectedPointerOverBackground="{ThemeResource SystemControlHighlightListAccentMediumBrush}"
+                                    PressedBackground="Transparent"
+                                    SelectedPressedBackground="{ThemeResource SystemControlHighlightListAccentHighBrush}"
+                                    DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}"
+                                    DragOpacity="{ThemeResource ListViewItemDragThemeOpacity}"
+                                    ReorderHintOffset="{ThemeResource ListViewItemReorderHintThemeOffset}"
+                                    HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                    VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                    ContentMargin="{TemplateBinding Padding}"
+                                    CheckMode="Inline"/>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <TextBlock Text="ListViewItem1"/>
+            <TextBlock Text="ListViewItem2"/>
+            <TextBlock Text="ListViewItem3"/>
+            <TextBlock Text="ListViewItem4"/>
+            <TextBlock Text="ListViewItem5"/>
+            <TextBlock Text="ListViewItem6"/>
+            <TextBlock Text="ListViewItem7"/>
+            <TextBlock Text="ListViewItem8"/>
+            <TextBlock Text="ListViewItem9"/>
+            <TextBlock Text="ListViewItem10"/>
+            <TextBlock Text="ListViewItem11"/>
+            <TextBlock Text="ListViewItem12"/>
+            <TextBlock Text="ListViewItem13"/>
+            <TextBlock Text="ListViewItem14"/>
+            <TextBlock Text="ListViewItem15"/>
+            <TextBlock Text="ListViewItem16"/>
+            <TextBlock Text="ListViewItem17"/>
+            <TextBlock Text="ListViewItem18"/>
+            <TextBlock Text="ListViewItem19"/>
+            <TextBlock Text="ListViewItem20"/>
+            <ListView.FooterTemplate>
+                <DataTemplate>
+                    <TextBlock Text="Footer"/>
+                </DataTemplate>
+            </ListView.FooterTemplate>
+        </ListView>
     </Grid>
 </Page>
