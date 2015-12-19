@@ -5,9 +5,11 @@
     xmlns:local="using:Win2D"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    Unloaded="Page_Unloaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <canvas:CanvasControl x:Name="canvas" Draw="CanvasControl_Draw" ClearColor="CornflowerBlue"/>
     </Grid>
 </Page>
